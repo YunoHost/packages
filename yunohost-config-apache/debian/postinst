@@ -21,7 +21,7 @@ mkdir -p /var/www/yunohost
 if [ ! -f /etc/yunohost/yunohost.conf ] || [ $(grep apache2 /etc/yunohost/yunohost.conf | cut -d= -f2) = "no" ];
 then
         #cp $TMP/admin-lo /etc/apache2/sites-available/
-        cp $TMP/apache2.conf /etc/apache2/
+        #cp $TMP/apache2.conf /etc/apache2/
         cp $TMP/yunohost.conf /etc/apache2/conf.d/
         #a2ensite handler admin-lo
         a2dissite default default-ssl
