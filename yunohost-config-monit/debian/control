@@ -1,0 +1,13 @@
+Source: yunohost-config-monit
+Section: utils
+Priority: extra
+Maintainer: Julien Malik <julien.malik@paraiso.me>
+Build-Depends: debhelper (>=8.0.0)
+Standards-Version: 3.9.1
+
+Package: yunohost-config-monit
+Architecture: all
+Homepage: http://www.yunohost.org
+Depends: monit
+Description: meta package to install environement for yunohost
+ meta package to install environement for yunohost
