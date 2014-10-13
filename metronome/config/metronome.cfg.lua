@@ -24,9 +24,9 @@
 pidfile = "/var/run/metronome/metronome.pid"
 
 log = {
-	info = "/var/log/metronome/metronome.log"; -- Change 'info' to 'debug' for verbose logging
+	debug = "/var/log/metronome/metronome.log"; -- Change 'debug' to 'info' for less verbose logging
 	error = "/var/log/metronome/metronome.err";
-	"*syslog";
+	-- "*syslog";
 }
 
 modules_enabled = {
