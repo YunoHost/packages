@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# initialize monit mailserver to localhost
+if [ ! -f /etc/monit/conf.d/yunohost-includes/mailserver ]; then
+  cat > /etc/monit/conf.d/yunohost-includes/mailserver << EOF
+set mailserver localhost
+EOF
+fi
+
+# initialize monit alert email to admin@main.domain
+if [ ! -f /etc/monit/conf.d/yunohost-includes/alert ]; then
+  cat > /etc/monit/conf.d/yunohost-includes/alert << EOF
+set alert admin@$(cat /etc/yunohost/current_host)
+EOF
+fi
+
+service monit reload

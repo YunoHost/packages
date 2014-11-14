@@ -1,0 +1,5 @@
+include /etc/monit/conf.d/yunohost-includes/mailserver
+include /etc/monit/conf.d/yunohost-includes/alert
+include /etc/monit/conf.d/yunohost-includes/monit-httpd
+
+include /etc/monit/conf.d/yunohost.d/*.conf

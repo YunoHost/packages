@@ -1,0 +1,5 @@
+yunohost-config-monit (2.0-rc1~megusta0) megusta; urgency=low
+
+  * Initial package
+
+ -- Julien Malik <julien.malik@paraiso.me@>  Mon, 09 Jun 2014 11:45:25 +0200

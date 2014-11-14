@@ -1,0 +1,6 @@
+debian/yunohost-config-monit
+debian/files
+debian/yunohost-config-monit.debhelper.log
+debian/yunohost-config-monit.substvars
+debian/debhelper.log
+debian/substvars
