@@ -124,3 +124,5 @@ sender_canonical_classes = envelope_sender
 
 # Ignore some headers
 smtp_header_checks = regexp:/etc/postfix/header_checks
+
+smtp_reply_filter = pcre:/etc/postfix/smtp_reply_filter
