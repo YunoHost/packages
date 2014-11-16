@@ -115,7 +115,7 @@ smtpd_recipient_restrictions =
     check_policy_service inet:127.0.0.1:10023
     permit
 
-#Use SPF
+# Use SPF
 policy-spf_time_limit = 3600s
 
 # SRS
@@ -124,3 +124,5 @@ sender_canonical_classes = envelope_sender
 
 # Ignore some headers
 smtp_header_checks = regexp:/etc/postfix/header_checks
+
+smtp_reply_filter = pcre:/etc/postfix/smtp_reply_filter

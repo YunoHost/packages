@@ -8,7 +8,7 @@ Standards-Version: 3.9.1
 Package: yunohost-config-postfix
 Architecture: all
 Homepage: http://www.yunohost.org
-Depends: postfix, postfix-ldap, postfix-policyd-spf-perl, yunohost-config-others, yunohost-config-slapd, rsyslog, yunohost-config-amavis, postgrey
+Depends: postfix, postfix-ldap, postfix-policyd-spf-perl, postfix-pcre, yunohost-config-others, yunohost-config-slapd, rsyslog, yunohost-config-amavis, postgrey
 Conflicts: sendmail, exim4
 Description: meta package to install environement for yunohost
  meta package to install environement for yunohost
